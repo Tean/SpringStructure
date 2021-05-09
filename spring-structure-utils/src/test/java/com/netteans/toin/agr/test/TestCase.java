@@ -23,8 +23,8 @@ public class TestCase {
             final long l3 = System.nanoTime();
             final Integer[] rsort = new QuickSort<Integer>().sort(rand, true);
             final long l4 = System.nanoTime();
-            System.out.println(String.format("Sort[%s] cost: Bubble[%s]", s, (l2 - l1)));
-            System.out.println(String.format("Sort[%s] cost: Quick [%s]", s, (l4 - l3)));
+            System.out.printf("Sort[%s] cost: Bubble[%s]%n", s, (l2 - l1));
+            System.out.printf("Sort[%s] cost: Quick [%s]%n", s, (l4 - l3));
         }
     }
 }
